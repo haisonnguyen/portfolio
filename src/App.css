@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.section-header { /* Home, About, Resume, Contact*/
+  text-align: center;
+  font-size: 24pt;
+}
+
+.subsection-header {
+  text-align: center;
+  font-size: 18pt;
+}
+
+.subsection-content {
+  text-align: center;
+  font-size: 12pt;
+}
+
+
+.label { /* Label for icons */
+  font-size: 18pt;
+}
+
+.flex { /* Columns for icons */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+  align-items: center;
+}
+
+section {
+  height: 100vh;
+}
+
+section:nth-child(n+2) {
+  padding-top:100px;
+}

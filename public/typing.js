@@ -11,7 +11,6 @@ for (var i = 0; i < originId.length; i++) {
   originText.push(document.getElementById(originId[i]).innerHTML);
 }
 
-
 var currentTimeout;
 var showCursor;
 
@@ -42,7 +41,6 @@ var typeWriter = function(index) {
   // show cursor on next line
   var totalTime = fullText.length * timeChar + timeChar;
   showCursor = setTimeout(function() {
-    document.getElementById('cursor-line').className = 'visible';
   }, totalTime);
 };
 
