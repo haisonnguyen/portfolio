@@ -37,7 +37,8 @@
   }
 }
 
-.section-header { /* Home, About, Resume, Contact*/
+/* Home, About, Resume, Contact*/
+.section-header { 
   text-align: center;
   font-size: 24pt;
 }
@@ -52,12 +53,13 @@
   font-size: 12pt;
 }
 
-
-.label { /* Label for icons */
+/* Label for icons */
+.label { 
   font-size: 18pt;
 }
 
-.flex { /* Columns for icons */
+/* Columns for icons */
+.flex { 
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -68,10 +70,14 @@
   align-items: center;
 }
 
-section {
-  height: 100vh;
+/*  To display image correctly and not 
+    have any weird white spacing on different sized screens*/
+section:nth-child(1) {
+  max-height: 100%;
 }
 
+/* Make sure spacing is only applied to sections after 'home' */
 section:nth-child(n+2) {
   padding-top:100px;
+  height: 100vh;
 }

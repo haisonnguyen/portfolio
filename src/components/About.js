@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { Container, Row, Col } from 'react-bootstrap/';
+import { Container, Row, Col, Image } from 'react-bootstrap/';
 
 import Icon from '@mdi/react';
 import { mdiSpeedometer, mdiCellphoneLink, mdiRocket, mdiWeatherCloudy } from '@mdi/js';
+
+import selfie from '../me_selfie.JPEG'
 
 export default function About() {
     return (
@@ -11,7 +13,7 @@ export default function About() {
             <Container>
                 <div className="section-header">About</div>
                 <Row>
-                    <Col className="flex" sm={6} lg={3}>
+                <Col className="flex" sm={6} lg={4}>
                         <Icon path={mdiCellphoneLink}
                             size={3}
                             horizontal
@@ -23,7 +25,7 @@ export default function About() {
                             My layouts are responsive, but so am I. Shoot me an email.
                         </div>
                     </Col>
-                    <Col className="flex" sm={6} lg={3}>
+                    <Col className="flex" sm={6} lg={4}>
                         <Icon path={mdiSpeedometer}
                             size={3}
                             horizontal
@@ -35,19 +37,7 @@ export default function About() {
                             Hate waiting on pages or widgets to load? Me too. Don't Wait.
                         </div>
                     </Col>
-                    <Col className="flex" sm={6} lg={3}>
-                        <Icon path={mdiRocket}
-                            size={3}
-                            horizontal
-                        />
-                        <div className="label">
-                            Dynamic
-                             </div>
-                        <div className="description">
-                            I love to level up my projects with dynamic content.
-                            </div>
-                    </Col>
-                    <Col className="flex" sm={6} lg={3}>
+                    <Col className="flex" sm={6} lg={4}>
                         <Icon path={mdiWeatherCloudy}
                             size={3}
                             horizontal
@@ -61,9 +51,11 @@ export default function About() {
                     </Col>
                 </Row>
                 <Row style={{ marginTop: "50px" }}>
-                    <Col sm={12} lg={6}>
+                    <Col sm={12} lg={6} style={{alignContent: "center"}}>
                         <div className="subsection-header">Who Am I?</div>
-                        <br />
+                        <Image src={selfie} style={{margin: "auto", display: "block"}}>
+
+                        </Image>
                         <p className="subsection-content">
                             My name is Haison Nguyen. I am a recent Computer Science graduate from Portland State University. Currently living in Portland, Oregon. I love living in the PNW because of the natural and cultural diversity.
                             Tech opportunies are growing here and there are adventures every single day.
