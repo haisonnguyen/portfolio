@@ -5,7 +5,7 @@ import logo from '../logo.png';
 
 export default function Navigation() {
     return (
-        <Navbar sticky="top" bg="dark" expand="lg">
+        <Navbar sticky="top" bg="dark" expand="lg" style={{marginTop: "50px"}}>
             <Container>
                 <Navbar.Brand href="#">
                     <img src={logo} width="30"

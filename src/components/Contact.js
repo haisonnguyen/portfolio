@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form, Button } from 'react-bootstrap/';
+import { Container, Form } from 'react-bootstrap/';
 
 export default function Contact() {
     return (
@@ -18,7 +18,6 @@ export default function Contact() {
                         <Form.Control as="textarea" rows="3" placeholder="Your message"/>
                     </Form.Group>
                 </Form>
-                <Button variant="dark" href="#home">Back to top</Button>{' '}
             </Container>
         </section>
     )
