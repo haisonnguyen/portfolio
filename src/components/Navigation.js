@@ -5,9 +5,9 @@ import logo from '../logo.png';
 
 export default function Navigation() {
     return (
-        <Navbar sticky="top" bg="dark" expand="lg" style={{marginTop: "50px"}}>
+        <Navbar sticky="top" bg="dark" expand="lg" className="smart-scroll">
             <Container>
-                <Navbar.Brand href="#">
+            <Navbar.Brand href="#">
                     <img src={logo} width="30"
                         height="30"
                         className="d-inline-block align-top"

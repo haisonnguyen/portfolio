@@ -1,24 +1,54 @@
 import React from 'react';
-import { Container, Form } from 'react-bootstrap/';
+import { Container, Form, Button, Row, Col, Navbar } from 'react-bootstrap/';
+
+import Icon from '@mdi/react';
+import { mdiFacebook, mdiGithub, mdiLinkedin } from '@mdi/js';
+
 
 export default function Contact() {
     return (
-        <section id="contact">
-            <Container>
-                <div className="section-header">Contact</div>
-                <p style={{textAlign: "center"}}>Do you have a question or want to work together?</p>
-                <Form>
-                    <Form.Group controlId="formName">
-                        <Form.Control type="email" placeholder="Name" />
-                    </Form.Group>
-                    <Form.Group controlId="formEmail">
-                        <Form.Control type="text" placeholder="Enter email" />
-                    </Form.Group>
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Control as="textarea" rows="3" placeholder="Your message"/>
-                    </Form.Group>
-                </Form>
-            </Container>
-        </section>
+        <>
+            <section id="contact">
+                <Container style={{ height: "100%" }}>
+                    <div className="section-header">Contact</div>
+                    <Row>
+                        <Col>
+                            <p style={{ textAlign: "center" }}>Do you have a question or want to work together?</p>
+                            <Form>
+                                <Form.Group controlId="formName">
+                                    <Form.Control type="email" placeholder="Name" />
+                                </Form.Group>
+                                <Form.Group controlId="formEmail">
+                                    <Form.Control type="text" placeholder="Enter email" />
+                                </Form.Group>
+                                <Form.Group controlId="formMessage">
+                                    <Form.Control as="textarea" rows="3" placeholder="Your message" />
+                                </Form.Group>
+                            </Form>
+                            <Button variant="dark" href="#home">Back to top</Button>{' '}
+                        </Col>
+                    </Row>
+                </Container>
+
+            </section>
+            <Navbar sticky="bottom" bg="dark">
+                <Container>
+                    <Row>
+                        <Col>
+                            <Icon path={mdiFacebook}
+                                size={2}
+                            />
+                            <Icon path={mdiGithub}
+                                size={2}
+                            />
+                            <Icon path={mdiLinkedin}
+                                size={2}
+                            />
+                        </Col>
+                    </Row>
+                </Container>
+            </Navbar>
+        </>
+
     )
 }

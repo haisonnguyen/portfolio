@@ -5,11 +5,13 @@ var timeChar = 40;       // time until next letter
 
 var cursorChar = '&#9608;';
 
-var originId = ['header1','header2'];
+var originId = ['caption1','caption2'];
 var originText = new Array();
 for (var i = 0; i < originId.length; i++) {
   originText.push(document.getElementById(originId[i]).innerHTML);
 }
+
+var cursorLine = document.getElementById('cursor-line');
 
 var currentTimeout;
 var showCursor;
@@ -41,6 +43,7 @@ var typeWriter = function(index) {
   // show cursor on next line
   var totalTime = fullText.length * timeChar + timeChar;
   showCursor = setTimeout(function() {
+    document.getElementById('cursor-line').className = 'visible';
   }, totalTime);
 };
 
@@ -62,6 +65,7 @@ var typeLineTimeout = new Array();
 for (var i = 0; i < originId.length; i++) {
   typeLineTimeout[i] = setTimeout((function(index) {
     return function() {
+      cursorLine.className = 'hidden';
       typeWriter(index);
     }
   })(i), cumulativeDelayTime[i]);
@@ -87,7 +91,7 @@ var skip = function() {
 
 var rewriteText = function(element, index, array) {
   var loc = document.getElementById(element);
-  loc.innerHTML =  originText[index];
+  loc.innerHTML = '&gt;&gt; ' + originText[index];
   loc.className = 'visible';
 };
 

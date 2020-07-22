@@ -1,91 +1,124 @@
 import React from 'react';
 
-import { Container, Row, Col } from 'react-bootstrap/';
+import { Container, Row, Col, Image } from 'react-bootstrap/';
 
 import Icon from '@mdi/react';
-import { mdiSpeedometer, mdiCellphoneLink, mdiRocket, mdiWeatherCloudy } from '@mdi/js';
+import { mdiSpeedometer, mdiCellphoneLink, mdiCloud, mdiHatFedora } from '@mdi/js';
+
+import selfie from '../me_selfie.JPEG'
 
 export default function About() {
     return (
         <section id="about">
             <Container>
-                <div className="section-header">About</div>
-                <Row>
-                    <Col className="flex" sm={6} lg={3}>
+                <div className="section-header translate">About</div>
+                <Row xs={6} lg={3}>
+                    <Col className="icon-square" xs={6} lg={3}>
                         <Icon path={mdiCellphoneLink}
-                            size={3}
-                            horizontal
+                            size={2}
                         />
-                        <div className="label">
+                        <div className="icon-label">
                             Responsive
                              </div>
-                        <div className="description">
+                        <div className="subsection-content">
                             My layouts are responsive, but so am I. Shoot me an email.
                         </div>
                     </Col>
-                    <Col className="flex" sm={6} lg={3}>
+                    <Col className="icon-square" xs={6} lg={3}>
                         <Icon path={mdiSpeedometer}
-                            size={3}
-                            horizontal
+                            size={2}
                         />
-                        <div className="label">
+                        <div className="icon-label">
                             Fast
                              </div>
-                        <div className="description">
+                        <div className="subsection-content">
                             Hate waiting on pages or widgets to load? Me too. Don't Wait.
                         </div>
                     </Col>
-                    <Col className="flex" sm={6} lg={3}>
-                        <Icon path={mdiRocket}
-                            size={3}
-                            horizontal
+                    <Col className="icon-square" xs={6} lg={3}>
+                        <Icon path={mdiCloud}
+                            size={2}
                         />
-                        <div className="label">
-                            Dynamic
-                             </div>
-                        <div className="description">
-                            I love to level up my projects with dynamic content.
+                        <div className="icon-label">
+                            Cloud ready
+                        </div>
+                        <div className="subsection-content">
+                            Scalable solutions using AWS or GCP.
                             </div>
                     </Col>
-                    <Col className="flex" sm={6} lg={3}>
-                        <Icon path={mdiWeatherCloudy}
-                            size={3}
-                            horizontal
+                    <Col className="icon-square" xs={6} lg={3}>
+                        <Icon path={mdiHatFedora}
+                            size={2}
                         />
-                        <div className="label">
-                            Cloud solutions
-                        </div>
-                        <div className="description">
-                            Cloud technology is NOW. Power up with cloud computing.
-                        </div>
+                        <div className="icon-label">
+                            Diverse
+                            </div>
+                        <div className="subsection-content ">
+                            When it comes to software, I like to wear many hats to get the job done.
+                            </div>
                     </Col>
                 </Row>
-                <Row style={{ marginTop: "50px" }}>
-                    <Col sm={12} lg={6}>
+                <Row>
+                    <Col sm={12} lg={6} className="subsection">
                         <div className="subsection-header">Who Am I?</div>
-                        <br />
+                        <Image src={selfie} style={{ margin: "auto", display: "block", paddingTop: "20px", paddingBottom: "20px" }}></Image>
                         <p className="subsection-content">
-                            My name is Haison Nguyen. I am a recent Computer Science graduate from Portland State University. Currently living in Portland, Oregon. I love living in the PNW because of the natural and cultural diversity.
-                            Tech opportunies are growing here and there are adventures every single day.
-                        </p>
-                        <p>
-                            I am open to full-time/contract opportunities and I am ready to hit the ground running in the tech industry. Send me a message and I'll promptly send you a reply!
+                            Computer Science graduate from Portland State University. My experience revolves around full stack engineering and consuming a lot of coffee. I'm quick, adaptable and have a strong desire to learn.
                         </p>
                     </Col>
-                    <Col sm={12} lg={6}>
-                        <div className="subsection-header"> Hobbies, Skills, Interests</div>
-                        <div className="subsection-content">
-                            <p>
-                                Just like anyone else, I love watching and playing sports, going to beach, grabbing drinks, travelling and I love to play video games!
-                        </p>
-                            <p className="subsection-content">
-
-                                I stand out by having some cool beatboxing skills and within tech, I like to wear many hats.
-                        </p>
-                            <p>
-                                I love hip-hop music, education, mukbang vlogs and dog-friends!
-                        </p>
-                        </div>
+                    <Col sm={12} lg={6} className="subsection">
+                            <Row>
+                                <Col className="subsection" sm={12} l={6}>
+                                <div className="subsection-header" > Hobbies, Skills, Interests</div>
+                                <div className="subsection-content">
+                                    <p className="subsection-content">
+                                        I am a high energy sports fan, hip-hop enthusiast, foodie fanatic, and video gamer.
+                                        Just like anyone else, I love grabbing drinks, travelling and cooking!
+                                    </p>
+                                    <p className="subsection-content">
+                                        I stand out by having some cool beatboxing skills and within tech, I like to wear many hats.
+                                    </p>
+                                </div>
+                                </Col>
+                            </Row>
+                        <Row>
+                            <Col className="skills">
+                                <div className="label">
+                                DevOps:
+                                </div>
+                                 <ul>
+                                    <li>Docker</li>
+                                    <li>Kubernetes</li>
+                                </ul>                            
+                                <div className="label">
+                                Databases:
+                                </div>
+                                <ul>
+                                    <li>SQL/NoSQL</li>
+                                </ul>
+                            </Col>
+                            <Col className="skills">
+                                <div className="label">
+                                Frontend:
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS/Bootstrap</li>
+                                    <li>JQuery</li>
+                                    <li>ReactJS</li>
+                                </ul>
+                            </Col>
+                            <Col className="skills">
+                                <div className="label">
+                                Backend:
+                                </div>
+                                 <ul>
+                                    <li>Node/Express</li>
+                                    <li>Flask</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

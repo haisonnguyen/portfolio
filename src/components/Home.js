@@ -1,16 +1,18 @@
 import React from 'react';
 
-import opener from '../opener.jpg';
-import { Image } from 'react-bootstrap/';
-
 export default function Home() {
   return (
-    <section id="home">
-      <Image src={opener} fluid/>
-      <div style={{ position: "absolute", top: "20%", left: "50%", transform: "translate(-50%, -20%)", fontSize: "24pt" }}>
-        <div>
-          <p id="header1" className="hidden">Hi, my name is Haison Nguyen.</p>
-          <p id="header2" className="hidden"> I'm a Full Stack Engineer.</p>
+    <section id="home" className="full-section">
+
+      <div className="banner">
+        <div className="centered-table">
+          <div className="content-table">
+            <div className="caption">
+              <div id="caption1" className="hidden">Hi, my name is Haison Nguyen</div>
+              <div id="caption2" className="hidden">I'm a full stack engineer</div>
+              <p id="cursor-line" className="visible"> <span className="typed-cursor"></span></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
