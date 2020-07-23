@@ -44,3 +44,7 @@ if (scroll) {
   $(".section-header").inViewport(function(px){
       if(px) $(this).addClass("triggeredCSS3") ;
   });
+
+  $(".row-icon").inViewport(function(px){
+    if(px) $(this).addClass("triggeredCSS3") ;
+});

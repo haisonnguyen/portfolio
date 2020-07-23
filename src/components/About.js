@@ -12,7 +12,7 @@ export default function About() {
         <section id="about">
             <Container>
                 <div className="section-header translate">About</div>
-                <Row xs={6} lg={3}>
+                <Row className="row-icon translate-left" xs={6} lg={3}> 
                     <Col className="icon-square" xs={6} lg={3}>
                         <Icon path={mdiCellphoneLink}
                             size={2}
