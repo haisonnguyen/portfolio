@@ -11,8 +11,8 @@ export default function About() {
     return (
         <section id="about">
             <Container>
-                <div className="section-header translate">About</div>
-                <Row className="row-icon translate-left" xs={6} lg={3}> 
+                <div className="section-header translate-right-full transition-right-full">About</div>
+                <Row className="row-icon translate-left-full transition-left-full" xs={6} lg={3}> 
                     <Col className="icon-square" xs={6} lg={3}>
                         <Icon path={mdiCellphoneLink}
                             size={2}
@@ -59,14 +59,14 @@ export default function About() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col sm={12} lg={6} className="subsection">
+                    <Col sm={12} lg={6} id="aboutMe" className="subsection translate-right transition-right">
                         <div className="subsection-header">Who Am I?</div>
                         <Image src={selfie} style={{ margin: "auto", display: "block", paddingTop: "20px", paddingBottom: "20px" }}></Image>
                         <p className="subsection-content">
                             Computer Science graduate from Portland State University. My experience revolves around full stack engineering and consuming a lot of coffee. I'm quick, adaptable and have a strong desire to learn.
                         </p>
                     </Col>
-                    <Col sm={12} lg={6} className="subsection">
+                    <Col sm={12} lg={6} id="skills" className="subsection translate-left transition-left">
                             <Row>
                                 <Col className="subsection" sm={12} l={6}>
                                 <div className="subsection-header" > Hobbies, Skills, Interests</div>

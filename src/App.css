@@ -110,8 +110,28 @@ section:nth-child(n+2) {
   font-size: 24pt;
   padding-bottom: 100px;
   margin-bottom: 100px;
-  transition: 1.5s;
+}
+
+.transition-left-full {
+  right: -1600px;
+}
+
+.transition-left {
+  right: -800px;
+}
+
+
+.transition-right-full {
+  left: -1600px;
+}
+
+.transition-right {
   left: -800px;
+}
+
+.transition-left-full, .transition-left, .transition-right-full,.transition-right {
+  position: relative;
+  transition: 1.5s;
 }
 
 .row-icon {
@@ -119,6 +139,8 @@ section:nth-child(n+2) {
   right: -1600px;
   transition: 1.5s;
 }
+
+
 
 .subsection-header, .job-company {
   font-size: 18pt;
@@ -147,12 +169,20 @@ html {
   scroll-behavior: smooth;
 }
 
-.translate.triggeredCSS3 {
+.translate-right-full.triggeredCSS3 {
+  transform: translate3d(1600px, 0, 0);
+}
+
+.translate-right.triggeredCSS3 {
   transform: translate3d(800px, 0, 0);
 }
 
-.translate-left.triggeredCSS3 {
+.translate-left-full.triggeredCSS3 {
   transform: translate3d(-1600px,0,0);
+}
+
+.translate-left.triggeredCSS3 {
+  transform: translate3d(-800px,0,0);
 }
 
 /*Iphone X*/

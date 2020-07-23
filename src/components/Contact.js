@@ -10,11 +10,11 @@ export default function Contact() {
         <>
             <section id="contact">
                 <Container style={{ height: "100%" }}>
-                    <div className="section-header">Contact</div>
+                    <div className="section-header translate-right-full transition-right-full">Contact</div>
                     <Row>
                         <Col>
-                            <p style={{ textAlign: "center" }}>Do you have a question or want to work together?</p>
-                            <Form>
+                            <p className="transition-left-full translate-left-full" style={{ textAlign: "center" }}>Do you have a question or want to work together?</p>
+                            <Form className="transition-right-full translate-right-full">
                                 <Form.Group controlId="formName">
                                     <Form.Control type="email" placeholder="Name" />
                                 </Form.Group>
