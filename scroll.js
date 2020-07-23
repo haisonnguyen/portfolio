@@ -23,34 +23,6 @@ if (scroll) {
     }
 }
 
-// // Plugin @RokoCB :: Return the visible amount of px
-// // of any element currently in viewport.
-// // stackoverflow.com/questions/24768795/
-// ; (function ($, win) {
-//     $.fn.inViewport = function (cb) {
-//         return this.each(function (i, el) {
-//             function visPx() {
-//                 var H = $(this).height(),
-//                     r = el.getBoundingClientRect(), t = r.top, b = r.bottom;
-//                 return cb.call(el, Math.max(0, t > 0 ? H - t : (b < H ? b : H)));
-//             } visPx();
-//             $(win).on("resize scroll", visPx);
-//         });
-//     };
-// }(jQuery, window));
-
-
-// $(".section-header").inViewport(function (px) {
-//     if (px) $(this)
-// });
-
-// $(".row-icon").inViewport(function (px) {
-//     if (px) $(this).addClass("triggeredCSS3");
-// });
-
-// $(".translate-left, .translate-left-full, .translate-right, .translate-right-full").inViewport(function (px) {
-//     if (px) $(this).addClass("triggeredCSS3");
-// });
 
 var $animation_elements = $('.translate-left, .translate-left-full, .translate-right, .translate-right-full');
 var $window = $(window);
@@ -69,7 +41,7 @@ function check_if_in_view() {
   
       //check to see if this current container is within viewport
       if ((element_bottom_position >= window_top_position) &&
-          (element_top_position <= window_bottom_position)) {
+          (element_top_position <= window_bottom_position) ){
         $element.addClass("triggeredCSS3");
       }
     });
