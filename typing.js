@@ -6,6 +6,7 @@ var timeChar = 40;       // time until next letter
 var cursorChar = '&#9608;';
 
 var originId = ['caption1','caption2'];
+var button = document.getElementById('check');
 var originText = new Array();
 for (var i = 0; i < originId.length; i++) {
   originText.push(document.getElementById(originId[i]).innerHTML);
@@ -31,6 +32,10 @@ var typeWriter = function(index) {
       // stops the function from self-calling when all letters are typed
       if (letterCount === fullText.length) {
         loc.innerHTML =  showText;
+        if(document.getElementById('caption2').classList.contains('visible')) {
+          button.classList.remove('hidden');
+          button.classList.add('visible');
+        }
       } else {
         loc.innerHTML = showText + '<span class="typed-cursor">' + cursorChar + '</span>';
         typeLetter();
@@ -45,6 +50,8 @@ var typeWriter = function(index) {
   showCursor = setTimeout(function() {
     document.getElementById('cursor-line').className = 'visible';
   }, totalTime);
+
+
 };
 
 // calculated time delays
@@ -69,7 +76,6 @@ for (var i = 0; i < originId.length; i++) {
       typeWriter(index);
     }
   })(i), cumulativeDelayTime[i]);
-
 };
 
 // stops all timeouts
@@ -80,6 +86,7 @@ var skip = function() {
     clearTimeout(typeLineTimeout[i]);
   };
 };
+
 
 // rewrite text with value stored on page load
 
