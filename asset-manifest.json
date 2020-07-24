@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2e03f73.chunk.css",
-    "main.js": "/static/js/main.9bb34d4c.chunk.js",
-    "main.js.map": "/static/js/main.9bb34d4c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/css/2.eb3137df.chunk.css": "/static/css/2.eb3137df.chunk.css",
-    "static/js/2.0f8ebbc3.chunk.js": "/static/js/2.0f8ebbc3.chunk.js",
-    "static/js/2.0f8ebbc3.chunk.js.map": "/static/js/2.0f8ebbc3.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.23b4e0b15956c670e1708eba01889674.js": "/precache-manifest.23b4e0b15956c670e1708eba01889674.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.eb3137df.chunk.css.map": "/static/css/2.eb3137df.chunk.css.map",
-    "static/css/main.d2e03f73.chunk.css.map": "/static/css/main.d2e03f73.chunk.css.map",
-    "static/js/2.0f8ebbc3.chunk.js.LICENSE.txt": "/static/js/2.0f8ebbc3.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/jonathan-simcoe.d8556edf.jpg",
-    "static/media/me_selfie.JPEG": "/static/media/me_selfie.e3537ca5.JPEG"
+    "main.css": "/portfolio/static/css/main.5a0701a9.chunk.css",
+    "main.js": "/portfolio/static/js/main.5df73090.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5df73090.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/css/2.eb3137df.chunk.css": "/portfolio/static/css/2.eb3137df.chunk.css",
+    "static/js/2.0f8ebbc3.chunk.js": "/portfolio/static/js/2.0f8ebbc3.chunk.js",
+    "static/js/2.0f8ebbc3.chunk.js.map": "/portfolio/static/js/2.0f8ebbc3.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.7df2d2ea090c06d06cc2625a71f8dc3d.js": "/portfolio/precache-manifest.7df2d2ea090c06d06cc2625a71f8dc3d.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.eb3137df.chunk.css.map": "/portfolio/static/css/2.eb3137df.chunk.css.map",
+    "static/css/main.5a0701a9.chunk.css.map": "/portfolio/static/css/main.5a0701a9.chunk.css.map",
+    "static/js/2.0f8ebbc3.chunk.js.LICENSE.txt": "/portfolio/static/js/2.0f8ebbc3.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/portfolio/static/media/jonathan-simcoe.d8556edf.jpg",
+    "static/media/me_selfie.JPEG": "/portfolio/static/media/me_selfie.e3537ca5.JPEG"
   },
   "entrypoints": [
-    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/runtime-main.209c2d7e.js",
     "static/css/2.eb3137df.chunk.css",
     "static/js/2.0f8ebbc3.chunk.js",
-    "static/css/main.d2e03f73.chunk.css",
-    "static/js/main.9bb34d4c.chunk.js"
+    "static/css/main.5a0701a9.chunk.css",
+    "static/js/main.5df73090.chunk.js"
   ]
 }
