@@ -28,7 +28,6 @@ var $animation_elements = $('.translate-left, .translate-left-full, .translate-r
 var $window = $(window);
 
 function check_if_in_view() {
-    console.log("scrolling")
     var window_height = $window.height();
     var window_top_position = $window.scrollTop();
     var window_bottom_position = (window_top_position + window_height);
@@ -52,5 +51,20 @@ function check_if_in_view() {
 
   $window.scroll(check_if_in_view);
 
+  $(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+     var scrollToVid = navbar.offset().top
+      console.log(scrollTop); //see window scroll distance //
+      console.log(scrollToVid); //see scroll to div offest//
+
+      if ($(window).scrollTop() >= scrollToVid) {
+        nav.addClass('scrolled-up')
+        nav.removeClass('scrolled-down');
+      }
+      else {
+        nav.addClass('scrolled-down')
+        nav.removeClass('scrolled-up');
+      }
+    });
 
   
